@@ -4,7 +4,6 @@ const express = require('express');
 const mongoose = require('mongoose');
 const app = express();
 const Customer = require('./models/customer.js');
-app.use (express.json());
 const PORT = process.env.PORT;
 app.use(express.json());
 app.use(express.urlencoded({extended: false}));
